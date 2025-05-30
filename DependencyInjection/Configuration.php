@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Patt\SuluConfigurationBundle\DependencyInjection;
+namespace PatLabs\SuluConfigurationBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

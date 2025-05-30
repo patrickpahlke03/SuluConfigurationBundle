@@ -2,7 +2,7 @@
 <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                   xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
-    <entity name="Patt\SuluConfigurationBundle\Entity\Config" table="configs">
+    <entity name="PatLabs\SuluConfigurationBundle\Entity\Config" table="configs">
         <id name="id" type="integer" column="id">
             <generator strategy="AUTO"/>
         </id>

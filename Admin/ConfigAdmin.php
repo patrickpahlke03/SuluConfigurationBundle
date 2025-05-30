@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Patt\SuluConfigurationBundle\Admin;
+namespace PatLabs\SuluConfigurationBundle\Admin;
 
-use Patt\SuluConfigurationBundle\Entity\Config;
+use PatLabs\SuluConfigurationBundle\Entity\Config;
 use Sulu\Bundle\AdminBundle\Admin\Admin;
 use Sulu\Bundle\AdminBundle\Admin\Navigation\NavigationItem;
 use Sulu\Bundle\AdminBundle\Admin\Navigation\NavigationItemCollection;
@@ -73,7 +73,7 @@ class ConfigAdmin extends Admin
             }
 
             $viewCollection->add(
-                $this->viewBuilderFactory->createFormViewBuilder('sulu_configuration.' . $key . '.' . $tab, '/form')
+                $this->viewBuilderFactory->createFormViewBuilder('sulu_configuration.' . $key . '.' . $tab, '/' . $tab)
                     ->setResourceKey(Config::RESOURCE_KEY)
                     ->addToolbarActions([
                         new ToolbarAction('sulu_admin.save'),

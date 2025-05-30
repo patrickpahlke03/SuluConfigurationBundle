@@ -17,7 +17,7 @@ It provides a flexible structure for defining and maintaining settings via the a
 ## 🛠️ Installation
 
 ```shell script
-composer require patt/sulu-configuration-bundle
+composer require patlabs/sulu-configuration-bundle
 ```
 
 Then register the bundle:
@@ -26,7 +26,7 @@ Then register the bundle:
 // config/bundles.php
 return [
     // ...
-    Patt\SuluConfigurationBundle\SuluConfigurationBundle::class => ['all' => true],
+    PatLabs\SuluConfigurationBundle\SuluConfigurationBundle::class => ['all' => true],
 ];
 ```
 
@@ -55,7 +55,7 @@ The bundle integrates seamlessly into the Sulu Admin Interface and allows:
 
 ```php
 // Controller
-$siteTitle = $this->get(\Patt\SuluConfigurationBundle\Services\ConfigService::class)->getConfig('configKey.fieldName');
+$siteTitle = $this->get(\PatLabs\SuluConfigurationBundle\Services\ConfigService::class)->getConfig('configKey.fieldName');
 ```
 
 Or in Twig:

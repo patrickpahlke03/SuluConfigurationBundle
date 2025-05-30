@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Patt\SuluConfigurationBundle\Controller;
+namespace PatLabs\SuluConfigurationBundle\Controller;
 
 use FOS\RestBundle\Routing\ClassResourceInterface;
 use FOS\RestBundle\View\ViewHandlerInterface;
-use Patt\SuluConfigurationBundle\Services\ConfigKeyManipulator;
-use Patt\SuluConfigurationBundle\Services\ConfigService;
+use PatLabs\SuluConfigurationBundle\Services\ConfigKeyManipulator;
+use PatLabs\SuluConfigurationBundle\Services\ConfigService;
 use Sulu\Component\Rest\AbstractRestController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

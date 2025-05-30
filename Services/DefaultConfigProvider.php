@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Patt\SuluConfigurationBundle\Services;
+namespace PatLabs\SuluConfigurationBundle\Services;
 
 use Sulu\Bundle\AdminBundle\Metadata\FormMetadata\FieldMetadata;
 use Sulu\Bundle\AdminBundle\Metadata\FormMetadata\FormMetadata;

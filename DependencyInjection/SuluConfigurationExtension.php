@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Patt\SuluConfigurationBundle\DependencyInjection;
+namespace PatLabs\SuluConfigurationBundle\DependencyInjection;
 
-use Patt\SuluConfigurationBundle\Entity\Config;
+use PatLabs\SuluConfigurationBundle\Entity\Config;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;

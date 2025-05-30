@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Patt\SuluConfigurationBundle\Services;
+namespace PatLabs\SuluConfigurationBundle\Services;
 
-use Patt\SuluConfigurationBundle\Repository\ConfigRepository;
+use PatLabs\SuluConfigurationBundle\Repository\ConfigRepository;
 
 class ConfigService
 {

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <container xmlns="http://symfony.com/schema/dic/services" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
     <services>
-        <service id="sulu_config.config_controller" class="Patt\SuluConfigurationBundle\Controller\ConfigController" public="true">
+        <service id="sulu_config.config_controller" class="PatLabs\SuluConfigurationBundle\Controller\ConfigController" public="true">
             <argument type="service" id="fos_rest.view_handler.default"/>
-            <argument type="service" id="Patt\SuluConfigurationBundle\Services\ConfigService"/>
-            <argument type="service" id="Patt\SuluConfigurationBundle\Services\ConfigKeyManipulator"/>
+            <argument type="service" id="PatLabs\SuluConfigurationBundle\Services\ConfigService"/>
+            <argument type="service" id="PatLabs\SuluConfigurationBundle\Services\ConfigKeyManipulator"/>
             <argument type="service" id="security.token_storage"/>
 
             <tag name="sulu.context" context="admin"/>
         </service>
 
-        <service id="Patt\SuluConfigurationBundle\Services\ConfigService">
-            <argument type="service" id="Patt\SuluConfigurationBundle\Services\DefaultConfigProvider"/>
-            <argument type="service" id="Patt\SuluConfigurationBundle\Repository\ConfigRepository"/>
+        <service id="PatLabs\SuluConfigurationBundle\Services\ConfigService">
+            <argument type="service" id="PatLabs\SuluConfigurationBundle\Services\DefaultConfigProvider"/>
+            <argument type="service" id="PatLabs\SuluConfigurationBundle\Repository\ConfigRepository"/>
         </service>
 
-        <service id="Patt\SuluConfigurationBundle\Admin\ConfigAdmin">
+        <service id="PatLabs\SuluConfigurationBundle\Admin\ConfigAdmin">
             <argument type="service" id="sulu_admin.view_builder_factory"/>
             <argument type="service" id="sulu_admin.form_metadata.form_xml_loader"/>
             <argument>%sulu_configuration.configurations.directories%</argument>
@@ -24,19 +24,19 @@
             <tag name="sulu.context" context="admin"/>
         </service>
 
-        <service id="Patt\SuluConfigurationBundle\Services\ConfigKeyManipulator"/>
+        <service id="PatLabs\SuluConfigurationBundle\Services\ConfigKeyManipulator"/>
 
-        <service id="Patt\SuluConfigurationBundle\Services\DefaultConfigProvider">
+        <service id="PatLabs\SuluConfigurationBundle\Services\DefaultConfigProvider">
             <argument type="service" id="sulu_admin.form_metadata_provider"/>
             <argument type="service" id="security.token_storage"/>
         </service>
 
-        <service id="Patt\SuluConfigurationBundle\Repository\ConfigRepository">
+        <service id="PatLabs\SuluConfigurationBundle\Repository\ConfigRepository">
             <argument type="service" id="doctrine.orm.entity_manager"/>
         </service>
 
-        <service id="Patt\SuluConfigurationBundle\Twig\ConfigExtension">
-            <argument type="service" id="Patt\SuluConfigurationBundle\Services\ConfigService"/>
+        <service id="PatLabs\SuluConfigurationBundle\Twig\ConfigExtension">
+            <argument type="service" id="PatLabs\SuluConfigurationBundle\Services\ConfigService"/>
             <tag name="twig.extension"/>
         </service>
     </services>

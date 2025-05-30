@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Patt\SuluConfigurationBundle\Services;
+namespace PatLabs\SuluConfigurationBundle\Services;
 
 class ConfigKeyManipulator
 {

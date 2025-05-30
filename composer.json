@@ -1,5 +1,5 @@
 {
-  "name": "patt/sulu-configuration-bundle",
+  "name": "patlabs/sulu-configuration-bundle",
   "description": "A Sulu bundle for managing dynamic configuration settings through the admin interface with form-based configuration storage and retrieval",
   "version": "0.1.0",
   "require": {

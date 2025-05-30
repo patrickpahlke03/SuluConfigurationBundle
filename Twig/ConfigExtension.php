@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Patt\SuluConfigurationBundle\Twig;
+namespace PatLabs\SuluConfigurationBundle\Twig;
 
-use Patt\SuluConfigurationBundle\Services\ConfigService;
+use PatLabs\SuluConfigurationBundle\Services\ConfigService;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 

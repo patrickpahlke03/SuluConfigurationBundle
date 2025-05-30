@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace Patt\SuluConfigurationBundle\Repository;
+namespace PatLabs\SuluConfigurationBundle\Repository;
 
 use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\ORM\EntityRepository;
 use Doctrine\Persistence\ObjectRepository;
-use Patt\SuluConfigurationBundle\Entity\Config;
+use PatLabs\SuluConfigurationBundle\Entity\Config;
 
 class ConfigRepository implements ObjectRepository
 {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Patt\SuluConfigurationBundle\Entity;
+namespace PatLabs\SuluConfigurationBundle\Entity;
 
 class Config
 {

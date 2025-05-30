@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Patt\SuluConfigurationBundle;
+namespace PatLabs\SuluConfigurationBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
