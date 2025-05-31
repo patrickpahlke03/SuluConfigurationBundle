@@ -1,4 +1,4 @@
-# SuluConfigurationBundle# SuluConfigurationBundle
+# SuluConfigurationBundle
 
 **SuluConfigurationBundle** enables easy creation, management and use of custom configurations in [Sulu CMS](https://sulu.io).
 It provides a flexible structure for defining and maintaining settings via the admin interface or programmatically via Symfony.
