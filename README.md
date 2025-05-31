@@ -53,7 +53,7 @@ sulu_configuration:
       - '%kernel.project_dir%/config/configs'
 ```
 
-Create the configs folder: `/config/configs`
+Create the configs folder: `config/configs`
 
 In this folder, all desired configurations can be defined. To do this, simply create an XML that defines an Admin Form, as you already know. (https://docs.sulu.io/en/2.6/book/extend-admin.html#form-configuration)
 
@@ -62,6 +62,11 @@ Last but not least, you need to update the database schema:
 ```shell script
 php bin/console doctrine:schema:update --force
 ```
+
+## 🛠️ Configuration
+
+To add a custom settings panel in the administration, simply create an XML in `config/configs` that defines an Admin Form, as you already know. (https://docs.sulu.io/en/2.6/book/extend-admin.html#form-configuration)
+Also have a look at the example. (https://github.com/patrickpahlke03/SuluConfigurationBundle/tree/main/Resources/example)
 
 ## 🔤️ Admin UI
 

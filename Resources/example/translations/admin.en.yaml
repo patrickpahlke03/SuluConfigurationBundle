@@ -1,0 +1,13 @@
+app_settings:
+  title: "App Title"
+  logo: "Logo"
+  color: "Primary Color"
+  secondaryColor: "Secondary Color"
+  textColor: "Text Color"
+  tags: "Tags"
+
+sulu_configuration:
+  app_settings:
+    navigation_name: "App Settings"
+    general: "General"
+    color: "Colors"

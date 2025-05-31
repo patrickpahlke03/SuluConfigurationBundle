@@ -1,0 +1,55 @@
+<?xml version="1.0" ?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://schemas.sulu.io/template/template"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/form-1.0.xsd"
+>
+    <key>app_settings</key>
+
+    <properties>
+        <property name="title" type="text_line" colspan="12">
+            <meta>
+                <title>app_settings.title</title>
+            </meta>
+            <params>
+                <param name="headline" value="true"/>
+            </params>
+        </property>
+
+        <section name="content">
+            <meta>
+                <title>Content</title>
+            </meta>
+            <properties>
+                <property name="logo" type="single_media_selection" colspan="6">
+                    <meta>
+                        <title>app_settings.logo</title>
+                    </meta>
+                    <params>
+                        <param name="types" value="image"/>
+                        <param name="image_size" value="800x400"/>
+                    </params>
+                </property>
+
+                <property name="primaryColor" type="color" colspan="6">
+                    <meta>
+                        <title>app_settings.color</title>
+                    </meta>
+                </property>
+            </properties>
+        </section>
+
+        <section name="tags">
+            <meta>
+                <title>Tags</title>
+            </meta>
+            <properties>
+                <property name="tags" type="tag_selection">
+                    <meta>
+                        <title>app_settings.tags</title>
+                    </meta>
+                </property>
+            </properties>
+        </section>
+    </properties>
+</form>

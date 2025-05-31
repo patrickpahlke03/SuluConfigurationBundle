@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://schemas.sulu.io/template/template"
+      xmlns:xi="http://www.w3.org/2001/XInclude"
+      xsi:schemaLocation="http://schemas.sulu.io/template/template http://schemas.sulu.io/template/form-1.0.xsd"
+>
+    <key>app_settings.color</key>
+
+    <properties>
+        <property name="primaryColor" type="color" colspan="6">
+            <meta>
+                <title>app_settings.color</title>
+            </meta>
+        </property>
+
+        <property name="secondaryColor" type="color" colspan="6">
+            <meta>
+                <title>app_settings.secondaryColor</title>
+            </meta>
+        </property>
+
+        <property name="textColor" type="color" colspan="6">
+            <meta>
+                <title>app_settings.textColor</title>
+            </meta>
+        </property>
+    </properties>
+</form>

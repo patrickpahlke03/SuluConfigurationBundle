@@ -74,6 +74,7 @@ class ConfigAdmin extends Admin
 
             $viewCollection->add(
                 $this->viewBuilderFactory->createFormViewBuilder('sulu_configuration.' . $key . '.' . $tab, '/' . $tab)
+                    ->setTabTitle('sulu_configuration.' . $key . '.' . $tab)
                     ->setResourceKey(Config::RESOURCE_KEY)
                     ->addToolbarActions([
                         new ToolbarAction('sulu_admin.save'),
