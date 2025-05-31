@@ -14,6 +14,7 @@ declare(strict_types=1);
 namespace PatLabs\SuluConfigurationBundle\Tests\Application;
 
 use PatLabs\SuluConfigurationBundle\SuluConfigurationBundle;
+use Sulu\Bundle\AdminBundle\SuluAdminBundle;
 use Sulu\Bundle\TestBundle\Kernel\SuluTestKernel;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\HttpKernel\Bundle\BundleInterface;
