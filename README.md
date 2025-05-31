@@ -30,7 +30,20 @@ return [
 ];
 ```
 
-Add the following configuration:
+Add the admin routing configuration:
+
+```yaml
+# config/routes/sulu_admin.yaml
+...
+
+sulu_config_api:
+  resource: "@SuluConfigurationBundle/Resources/config/routing_api.yml"
+  type: rest
+  prefix: /admin/api
+
+```
+
+Add the following package configuration:
 
 ```yaml
 # config/packages/sulu_configuration.yaml
@@ -40,9 +53,15 @@ sulu_configuration:
       - '%kernel.project_dir%/config/configs'
 ```
 
-Create the configs folder: /config/configs
+Create the configs folder: `/config/configs`
 
 In this folder, all desired configurations can be defined. To do this, simply create an XML that defines an Admin Form, as you already know. (https://docs.sulu.io/en/2.6/book/extend-admin.html#form-configuration)
+
+Last but not least, you need to update the database schema:
+
+```shell script
+php bin/console doctrine:schema:update --force
+```
 
 ## 🔤️ Admin UI
 
