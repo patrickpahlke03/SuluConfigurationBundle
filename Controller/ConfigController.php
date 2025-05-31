@@ -18,6 +18,7 @@ use FOS\RestBundle\View\ViewHandlerInterface;
 use PatLabs\SuluConfigurationBundle\Services\ConfigKeyManipulator;
 use PatLabs\SuluConfigurationBundle\Services\ConfigService;
 use Sulu\Component\Rest\AbstractRestController;
+use Symfony\Component\HttpFoundation\Exception\BadRequestException;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
@@ -37,6 +38,10 @@ class ConfigController extends AbstractRestController implements ClassResourceIn
     {
         $configKeyPrefix = $request->get('id');
 
+        if (!\is_string($configKeyPrefix)) {
+            throw new BadRequestException('id must be type of string');
+        }
+
         $configs = $this->configService->getConfigsByPrefix($configKeyPrefix);
 
         return $this->handleView(
@@ -49,6 +54,11 @@ class ConfigController extends AbstractRestController implements ClassResourceIn
     public function putAction(Request $request): Response
     {
         $configKeyPrefix = $request->get('id');
+
+        if (!\is_string($configKeyPrefix)) {
+            throw new BadRequestException('id must be type of string');
+        }
+
         $configArray = $this->configKeyManipulator->prefixArrayKeys(
             $request->getPayload()->all(),
             $configKeyPrefix,

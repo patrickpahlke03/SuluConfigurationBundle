@@ -1,0 +1,22 @@
+includes:
+    - vendor/jangregor/phpstan-prophecy/extension.neon
+    - vendor/phpstan/phpstan-doctrine/extension.neon
+    - vendor/phpstan/phpstan-doctrine/rules.neon
+    - vendor/phpstan/phpstan-symfony/extension.neon
+    - vendor/phpstan/phpstan-phpunit/extension.neon
+    - vendor/phpstan/phpstan-phpunit/rules.neon
+    - vendor/thecodingmachine/phpstan-strict-rules/phpstan-strict-rules.neon
+
+parameters:
+    paths:
+        - .
+    level: max
+    excludePaths:
+        - %currentWorkingDirectory%/DependencyInjection/Configuration.php
+        - %currentWorkingDirectory%/Tests/*
+        - %currentWorkingDirectory%/vendor/*
+    symfony:
+        console_application_loader: Tests/phpstan/console-application.php
+        constant_hassers: false
+    doctrine:
+        objectManagerLoader: Tests/phpstan/object-manager.php

@@ -86,12 +86,12 @@ class ConfigRepository implements ObjectRepository
         return $this->entityRepository->find($id);
     }
 
-    public function findAll()
+    public function findAll(): array
     {
         return $this->entityRepository->findAll();
     }
 
-    public function findBy(array $criteria, ?array $orderBy = null, ?int $limit = null, ?int $offset = null)
+    public function findBy(array $criteria, ?array $orderBy = null, ?int $limit = null, ?int $offset = null): array
     {
         return $this->entityRepository->findBy($criteria, $orderBy, $limit, $offset);
     }

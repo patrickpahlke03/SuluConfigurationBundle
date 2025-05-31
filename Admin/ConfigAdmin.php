@@ -26,8 +26,14 @@ use Symfony\Component\Finder\Finder;
 
 class ConfigAdmin extends Admin
 {
+    /**
+     * @var array<string>
+     */
     private array $configurationKeys = [];
 
+    /**
+     * @param array<string> $configurationDirectories
+     */
     public function __construct(
         private readonly ViewBuilderFactoryInterface $viewBuilderFactory,
         private readonly FormXmlLoader $formXmlLoader,

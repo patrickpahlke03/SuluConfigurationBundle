@@ -21,7 +21,10 @@ class Config
 
     private string $configKey;
 
-    private mixed $value = ['_value' => null];
+    /**
+     * @var array{'_value': mixed}
+     */
+    private array $value = ['_value' => null];
 
     public function getId(): int
     {

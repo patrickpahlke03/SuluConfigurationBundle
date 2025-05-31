@@ -1,0 +1,4 @@
+sulu_configuration:
+  configurations:
+    directories:
+      - '%kernel.project_dir%/config/configs'

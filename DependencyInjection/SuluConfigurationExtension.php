@@ -48,7 +48,7 @@ class SuluConfigurationExtension extends Extension implements PrependExtensionIn
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        $forms = $container->getParameter('sulu_admin.forms.directories');
+        $forms = (array) $container->getParameter('sulu_admin.forms.directories');
         if ($forms) {
             $container->setParameter('sulu_admin.forms.directories', \array_merge($forms, $config['configurations']['directories']));
         }
