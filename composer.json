@@ -1,7 +1,7 @@
 {
   "name": "patlabs/sulu-configuration-bundle",
   "description": "A Sulu bundle for managing dynamic configuration settings through the admin interface with form-based configuration storage and retrieval",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
   "type": "symfony-bundle",
   "keywords": [
